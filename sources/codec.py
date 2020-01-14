@@ -12,7 +12,6 @@ def main():
     root.geometry('440x140')
     root.title('CODEC GUI')
     root.configure(bg='black')
-    root.iconbitmap('../assets/icon/icon.ico')
 
     # Row 1 -> Encode / Decode file
     row_2 = tk.Frame(root)
