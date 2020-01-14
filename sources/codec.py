@@ -1,4 +1,4 @@
-# coding=utf-8
+﻿# coding=utf-8
 import Tkinter as tk
 import easygui
 import webbrowser
@@ -71,6 +71,7 @@ def encode():
             text.write(x1)
             text.write(x2)
 
+    easygui.msgbox("Encodage du fichier terminé.", "Message from CODEC")
     print('Encoding success, exit.')
     return True
 
@@ -121,6 +122,7 @@ def decode():
     with open(filename_dec, 'a') as file:
         file.write(bits2strings(full_decoded))
 
+    easygui.msgbox("Décodage du fichier terminé.", "Message from CODEC")
     print('Decoding success, exit.')
     return True
 
